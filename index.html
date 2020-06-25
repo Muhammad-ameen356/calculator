@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="cal">
+
+        <input type="text" id="txt" class="form-control" /><br>
+        <div class="btn">
+            <button onclick="document.getElementById('txt').value+='7'">7</button>
+            <button onclick="document.getElementById('txt').value+='8'">8</button>
+            <button onclick="document.getElementById('txt').value+='9'">9</button>
+            <span class="alag">
+                <button onclick="document.getElementById('txt').value+='+'">+</button>
+                <button onclick="document.getElementById('txt').value+='-'">-</button>
+            </span>
+        </div>
+        <div class="btn">
+            <button onclick="document.getElementById('txt').value+='4'">4</button>
+            <button onclick="document.getElementById('txt').value+='5'">5</button>
+            <button onclick="document.getElementById('txt').value+='6'">6</button>
+            <span class="alag">
+                <button onclick="document.getElementById('txt').value+='*'">&#215;</button>
+                <button onclick="document.getElementById('txt').value+='/'">&#247;</button>
+            </span>
+        </div>
+        <div class="btn">
+            <button onclick="document.getElementById('txt').value+='1'">1</button>
+            <button onclick="document.getElementById('txt').value+='2'">2</button>
+            <button onclick="document.getElementById('txt').value+='3'">3</button>
+            <span class="alag">
+                <span class="equal">
+                <button onclick="document.getElementById('txt').value=eval(document.getElementById('txt').value)">=</button>
+            </span>
+            </span>
+        </div>
+        <div class="btn">
+            <button onclick="document.getElementById('txt').value+='0'">0</button>
+            <button onclick="document.getElementById('txt').value+='.'">&#8729;</button>
+            <button onclick="document.getElementById('txt').value=''">C</button>
+            <span class="alag">
+            <span class="equal">
+                <button onclick="back()"> &#8592;</button>
+            </span></span>
+        </div>
+    </div>
+</body>
+<script>
+    function back() {
+        var ameen = document.getElementById("txt").value
+        document.getElementById("txt").value = ameen.substr(0, ameen.length - 1)
+    }
+</script>
+
+</html>

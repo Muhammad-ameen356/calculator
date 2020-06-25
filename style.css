@@ -1,0 +1,64 @@
+body {
+    background-size: 100% 700px;
+    /* background-image: linear-gradient(#001d4c, #17a2b8, #007bff); */
+    background-image: url("2.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    width: 610px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 5px white;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    margin-top: 50px;
+    letter-spacing: 4px;
+}
+
+.cal .btn button {
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    font-size: 30px;
+    background-image: linear-gradient(red, yellow);
+    color: white;
+    border-radius: 7px;
+}
+
+.cal .btn button:hover {
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    font-size: 30px;
+    background-image: linear-gradient(rgb(93, 50, 0), rgb(252, 255, 87));
+    color: white;
+    border-radius: 7px;
+}
+
+.cal .btn .alag .equal button {
+    width: 243px;
+}
+
+.cal .btn .alag button {
+    margin-top: 10px;
+    font-size: 30px;
+    background-image: linear-gradient(rgb(111, 0, 255), rgb(255, 0, 221));
+    color: white;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.cal .btn .alag .equal button:hover {
+    margin-top: 10px;
+    width: 243px;
+    height: 50px;
+    font-size: 30px;
+    background-image: linear-gradient(rgb(226, 217, 238), rgb(255, 0, 221));
+    color: white;
+    border-radius: 7px;
+    display: inline-block;
+}
